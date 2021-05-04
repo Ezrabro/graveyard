@@ -1,0 +1,102 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background: url(/smalltombstone___Gallery.jpg) no-repeat center fixed; 
+    background-size: cover;
+}
+
+.title{
+    color: rgb(53, 53, 53);
+    position: absolute;
+    left: 45%;
+    top: 30%;
+}
+
+.date{
+    color: rgb(53, 53, 53);
+    position: absolute;
+    left: 45%;
+    top: 35%;
+}
+
+.time{
+    color: rgb(53, 53, 53);
+    position: absolute;
+    left: 45%;
+    top: 42%;
+}
+
+.Content{
+    color: rgb(53, 53, 53);
+    position: absolute;
+    width: 425px;
+    left: 37%;
+    top: 50%;
+}
+
+.author{
+    color: rgb(53, 53, 53);
+    position: absolute;
+    left: 37%;
+    top: 70%;
+}
+
+.Made{
+    color: rgb(53, 53, 53);
+    position: absolute;
+    left: 47%;
+    top: 87%;
+}
+
+.id{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+
+
+.qrcode{
+    position: absolute;
+    width: 100px;
+    left: 48%;
+    top: 17%;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+@keyframes napelonirot {
+    0%   { transform: rotateY(0deg); -webkit-transform: rotateY(0deg); -moz-transform: rotateY(0deg); -ms-transform: rotateY(0deg); -o-transform: rotateY(0deg); }
+    25%  { transform: rotateY(180deg); -webkit-transform: rotateY(180deg); -moz-transform: rotateY(180deg); -ms-transform: rotateY(180deg); -o-transform: rotateY(180deg); }
+    50%  { transform: rotateY(0deg); -webkit-transform: rotateY(0deg); -moz-transform: rotateY(0deg); -ms-transform: rotateY(0deg); -o-transform: rotateY(0deg); }
+    100% { transform: rotateY(180deg); -webkit-transform: rotateY(180deg); -moz-transform: rotateY(180deg); -ms-transform: rotateY(180deg); -o-transform: rotateY(180deg); }
+}
+
+.napel{
+    position: absolute;
+    bottom: 10vh;
+    left: 10vw;
+    width: 70px;
+    animation-name: napelonirot;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    filter: drop-shadow(0 0 10px rgb(0, 0, 0));
+    -webkit-filter: drop-shadow(0 0 10px rgb(0, 0, 0));
+}
+
+.hand img{
+    position: absolute;
+    bottom: 10vh;
+    left: 75vw;
+    width: 250px;
+    filter: drop-shadow(0 0 10px rgb(255, 255, 255));
+    -webkit-filter: drop-shadow(0 0 10px rgb(255, 255, 255));
+}

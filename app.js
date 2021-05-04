@@ -1,0 +1,16 @@
+var today = new Date();
+var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+console.log(date);
+var today = new Date();
+var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+console.log(time);
+document.getElementById('date').textContent = date;
+document.getElementById('time').textContent = time;
+var req = new XMLHttpRequest();
+req.open('GET', 'https://api.quotable.io/random', false);
+req.send(null);
+var qt = JSON.parse(req.responseText);
+console.log(qt);
+document.getElementById('content').textContent = qt.content;
+document.getElementById('author').textContent = qt.author;
+document.getElementById('id').textContent = qt._id;
